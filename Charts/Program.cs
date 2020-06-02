@@ -46,9 +46,9 @@ namespace Charts
                     Value = 54.04
                 }
             };
-            pc.MaxSlicesToShow = 5;
+            pc.MaxSlicesToShow = 2;
 
-            var ms = pc.Generate(500, 500);
+            var ms = pc.Generate(1000, 1000);
             var fName = Guid.NewGuid().ToString();
             var fPath = $@"C:\tmp\{fName}.png";
             FileStream file = new FileStream(fPath, FileMode.Create, FileAccess.Write);
